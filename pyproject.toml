@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "fidrox-ai"
+version = "0.1.0"
+description = ""
+authors = []
+
+packages = [
+    { include = "app"}
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+dependency-injector = "^4.41.0"
+async-timeout = "^4.0.3"
+redis = "^5.0.3"
+langchain = "^0.2.1"
+langchain-openai = "^0.1.21"
+langchain-community = "^0.2.4"
+langgraph-checkpoint-sqlite = "^1.0.0"
+langgraph = "^0.2.3"
+
+fastapi-camelcase = "^2.0.0"
+python-dotenv = "^1.0.1"
+psycopg = "^3.1.18"
+psycopg-binary = "^3.1.18"
+jq = "^1.7.0"
+faiss-cpu = "^1.8.0"
+pycoingecko = "^3.1.0"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
+matplotlib = "^3.8.4"
+pandas-ta = "^0.3.14b0"
+literalai = "^0.0.401"
+aiosqlite = "^0.20.0"
+psycopg_pool = "^3.2.2"
+aiocron = "^1.8"
+langgraph-checkpoint-postgres = "^1.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+mypy = "^1.9.0"
+ruff = "^0.3.3"
+coverage = "^7.4.4"
+pre-commit = "^3.6.2"
+jupyter = "^1.0.0"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
+matplotlib = "^3.8.4"
+pandas-ta = "^0.3.14b0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
